@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .row>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .0) !important;
+    padding-left: calc(var(--bs-gutter-x) * .0) !important;
+    margin-top: var(--bs-gutter-y);
+}
+
+  .card {
+    width: 1440px;
+    border-radius: 15px;
+    display: flex;
+    overflow: hidden;
+    background-image: url("/images/bg-intro-desktop.png");
+    background-color: hsl(0, 100%, 74%) !important;
+}
+
+.card .card-right-top{
+    margin-top: 7rem;
+}
+
+.card .card-right-top .btn-1{
+    width: 100%;
+    height: 60px;
+    border-radius: 8px;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    color: white;
+    background-color: hsl(248, 32%, 49%);
+    border: 1px solid hsl(248, 32%, 49%);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+ }
+
+ .card .card-left{
+    margin-bottom: 6rem;
+}
+
+.card .card-left .box-text {
+    margin-top: 110px;
+    margin-left: 180px;
+    margin-bottom: 150px;
+}
+
+.card .card-left .box-text h3{
+    font-size: 45px;
+    color: white;
+    text-align: left;
+}
+
+.card .card-left .box-text p{
+    margin-top: 1rem;
+    font-size: 14px;
+    color: white;
+    text-align: left;
+    margin-right: 67px;
+}
+
+
+.card .card-right{
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    margin-bottom: 6rem;
+}
+.card .card-right form {
+    margin-top: 25px;
+ }
+
+
+
+ .card .card-right form input{
+    width: 530px;
+    height: 60px;
+    border-radius: 5px;
+    margin-top: 1.2rem;
+    margin-left: 40px;
+    border: 1px solid hsl(246, 25%, 77%);
+    padding-left: 2rem;
+ }
+
+ .card .card-right form input:focus-within{
+    border: 1px  solid hsl(249, 10%, 26%);
+    outline: none !important;
+ }
+
+ /* input[type=submit]:hover {
+    background-color: hsl(249, 10%, 26%);
+  } */
+
+
+ .card .card-right  .btn-2{
+    width: 530px;
+    height: 60px;
+    border-radius: 5px;
+    margin-top: 1.2rem;
+    margin-left: 40px;
+    color: white;
+    background-color: hsl(154, 59%, 51%);
+    border: 1px solid hsl(154, 59%, 51%);
+    text-transform: uppercase;
+ }
+
+ .card .card-right p{
+    margin: 1rem 0rem 2rem 4rem;
+    color: hsl(246, 25%, 77%);
+    font-size: 13px;
+ }
+
+ .card .card-right p > a{
+     color: hsl(0, 100%, 74%);
+ }
+
+ .card .card-right .warning > p{
+    margin: 0px;
+    margin-top: 0.5rem;
+    margin-right: 2.5rem;
+    text-align: right;
+    color: hsl(0, 100%, 74%);
+}
+
+.warning img{
+    position: absolute;
+    margin: 35px;
+    margin-left: 32rem;
+}
+
+
+@media only screen and (max-width: 960px){
+    .card{
+        width: 375px;
+        flex-direction: column;
+        height: auto;
+        padding-top: 0rem;
+    }
+
+    .card .card-right{
+        width: 80%;
+        margin-left: 40px;
+    }
+    .card .card-right form input {
+        width: 83%;
+        height: 60px;
+        border-radius: 5px;
+        margin-top: 1.2rem;
+        margin-left: 30px;
+        border: 1px solid hsl(246, 25%, 77%);
+        padding-left: 1rem !important;
+    }
+
+    .card .card-right .btn-2 {
+        width: 83%;
+        height: 60px;
+        border-radius: 5px;
+        margin-top: 1.2rem;
+        margin-left: 30px;
+        color: white;
+        background-color: hsl(154, 59%, 51%);
+        border: 1px solid hsl(154, 59%, 51%);
+        text-transform: uppercase;
+    }
+
+    .card .card-right p {
+        margin: 1rem 1rem 2rem 2rem;
+        color: hsl(246, 25%, 77%);
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .card .card-right-top {
+        position: absolute;
+        margin-top: 20.5rem;
+    }
+
+    .card .card-right-top .btn-1 {
+        width: 85%;
+        margin-left: 40px;
+        height: 90px;
+        border-radius: 8px;
+        margin-top: 1.2rem;
+        margin-bottom: 1.2rem;
+        color: white;
+        background-color: hsl(248, 32%, 49%);
+        border: 1px solid hsl(248, 32%, 49%);
+        box-shadow: rgb(0 0 0 / 15%) 0px 3px 3px 0px;
+        text-align: center;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .card .card-left .box-text {
+        margin-top: 90px;
+        margin-left: 70px;
+        margin-bottom: 60px;
+    }
+    .card .card-left .box-text h3 {
+        font-size: 32px;
+        color: white;
+        text-align: left;
+    }
+    .card .card-left .box-text p {
+        margin-top: 1rem;
+        font-size: 13px;
+        color: white;
+        text-align: center;
+        margin-right: 70px;
+    }
+
+    .warning img {
+        position: absolute;
+        margin: 35px;
+        margin-left: 16rem;
+    }
+}
